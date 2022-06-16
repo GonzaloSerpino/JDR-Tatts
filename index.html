@@ -7,16 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <title>JDR TATS</title>
 </head>
 
 <body>
     <div class="contenedorI">
-        <header class="header">
-            <h1 class="titulo">
-                <a href="./index.html">JDR TATS</a>
-            </h1>
+        <header class="header container-fluid">
+            <a class="titulo" href="./index.html"><img src="./Imagenes/logo.png" alt="logo jdrtats"></a>
             <nav>
                 <ul class="menu">
                     <li>
@@ -37,51 +37,52 @@
                 </ul>
             </nav>
         </header>
-        <main>
-            <!-- LA IDEA ORIGINAL ES AGREGAR CONTENIDO MULTIMEDIA AL INICIO DE LA PAGINA PRINCIPAL ADEMAS DE LAS DEMAS SECCIONES -->
-            <section class="exp">
-                <div class="imgexp">
-                    <img src="./Imagenes/Screenshot_20220517-193143.png" alt="Dueño de jdr tats tatuando">
-                </div>
-                <div class="textexp">
-                    <h2>EXPERIENCIA</h2>
-                    <ul>
-                        <li>Alumno recibido de la academia de Hernan Coretta</li>
-                        <li>Especialista en el estilo Black and Grey oriental</li>
-                        <li>Mas de 10 años de experiencia como profesional</li>
-                        <li>Estudio privado con todas las comodidades ubicado en CABA</li>
-                        <li>Versatilidad de clientela y estilos</li>
-                    </ul>
-                    <a href="./sobre_mi.html">Ver más</a>
-                </div>
-            </section>
-            <section class="muestra">
-                <div>
-                    <h2>mis trabajos</h2>
-                </div>
-                <div class="tatts">
-                    <img src="./Imagenes/Búho.jpg" alt="tatuaje black and grey de un buho" height="300" width="250">
-                    <img src="./Imagenes/IMG_0565o.jpg" alt="tatuaje black and grey demonio oni" height="300"
-                        width="250">
-                    <img src="./Imagenes/IMG_1748.JPG" alt="tatuaje manga black and grey de mandalas" height="300"
-                        width="250">
-                    <img src="./Imagenes/IMG_1089.jpg" alt="tatuaje manga black and grey" height="300" width="250">
-                </div>
-                <div>
-                    <a href="./trabajos.html">Ver más</a>
-                </div>
-
-            </section>
-        </main>
-        <footer class="footer">
-            <div class="links">
-                <a href="https://www.facebook.com/javier.reygarufa"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/jdr.tats/"><i class="fab fa-instagram"></i></a>
-                <a href="https://wa.me/1161820862"><i class="fab fa-whatsapp"></i></a>
-            </div>
-        </footer>
     </div>
+    <main>
+        <section class="exp container-fluid row">
+            <div class="imgexp col-md-5">
+                <img class="rounded mx-auto d-block" src="./Imagenes/Screenshot_20220517-193143.png"
+                    alt="Dueño de jdr tats tatuando">
+            </div>
+            <div class="textexp col-md-7">
+                <h2>EXPERIENCIA</h2>
+                <ul>
+                    <li>Alumno recibido de la academia de Hernan Coretta</li>
+                    <li>Especialista en el estilo Black and Grey oriental</li>
+                    <li>Mas de 10 años de experiencia como profesional</li>
+                    <li>Estudio privado con todas las comodidades ubicado en CABA</li>
+                    <li>Versatilidad de clientela y estilos</li>
+                </ul>
+                <a href="./sobre_mi.html">Ver más</a>
+            </div>
+        </section>
+        <section class="muestra container-fluid row">
+            <div>
+                <h2>mis trabajos</h2>
+            </div>
+            <div class="tatts">
+                <img src="./Imagenes/Búho.jpg" alt="tatuaje black and grey de un buho">
+                <img src="./Imagenes/IMG_0565o.jpg" alt="tatuaje black and grey demonio oni">
+                <img src="./Imagenes/IMG_1748.JPG" alt="tatuaje manga black and grey de mandalas">
+                <img src="./Imagenes/IMG_1089.jpg" alt="tatuaje manga black and grey">
+            </div>
+            <div>
+                <a class="mx-auto d-block" href="./trabajos.html">Ver más</a>
+            </div>
 
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="links">
+            <a href="https://www.facebook.com/javier.reygarufa"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/jdr.tats/"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/1161820862"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
 
 </html
