@@ -143,8 +143,8 @@ ul{
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
 }
 
 .textexp h2 {
@@ -472,7 +472,7 @@ ul{
     }
 
     .textexp {
-        height: 60vh;
+        margin: 0px;
     }
 
     .textexp h2 {
@@ -624,6 +624,7 @@ ul{
     /* INDEX ******************** */
 
     .exp {
+        height: auto;
         margin: 0px;
         display: flex;
         flex-direction: column;
@@ -633,11 +634,20 @@ ul{
     }
 
     .textexp{
+        width: auto;
+        height: auto;
         margin: 0px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
     }
 
     .imgexp img{
-        width: 60vw;
+        width: 50vw;
     }
 
     .tatts img {
@@ -650,9 +660,14 @@ ul{
     }
 
     /* Sobre mi************* */
+
+    .info{
+        height: auto;
+    }
+
     .info img{
         width: 75vw;
-        height: 75vw;
+        height: 60vh;
     }
 
     /* Merch */
