@@ -714,6 +714,7 @@ ul{
 
     /* Sobre Mi *******************/
     .info img{
+        margin: 1rem;
         height: 30vh;
     }
 
