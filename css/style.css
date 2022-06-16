@@ -57,9 +57,14 @@
 
 /* Header  **********************/
 
+ul{
+    padding-left: 0px;
+}
+
 .header {
     grid-area: header;
-    background-color: #222;
+    background-image: url(../Imagenes/BACKGROUNDH.png);
+    background-size: cover;
     height: 10vh;
     position: relative;
     display: flex;
@@ -67,7 +72,7 @@
     flex-wrap: wrap;
     align-content: space-around;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
 }
 
 .titulo {
@@ -81,7 +86,13 @@
     font-family: 'Inconsolata', monospace;
 }
 
+.titulo img{
+    width: 5vw;
+    height: 10vh;
+}
+
 .menu {
+    margin-top: 1rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -105,6 +116,7 @@
 /* Main Index *****************/
 
 .exp {
+    margin: 0px;
     grid-area: exp;
     display: flex;
     flex-direction: row;
@@ -117,13 +129,13 @@
 }
 
 .imgexp {
-    padding: 10vh;
-    margin-left: 10vh;
+    padding: 1rem;
 }
 
 .imgexp img {
-    max-width: 450px;
-    max-height: 400px;
+    margin: 0.5rem;
+    width: 20vw;
+    height: 40vh;
 }
 
 .textexp {
@@ -132,8 +144,7 @@
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
-    align-items: stretch;
-    margin-left: 20vh;
+    align-items: center;
 }
 
 .textexp h2 {
@@ -165,8 +176,7 @@
     transition: 0.5s;
     box-shadow: 0px 4px 4px rgba(255, 0, 0, 0.37);
     position: relative;
-    top: 50px;
-    left: 40%;
+    top: 1rem;
 }
 
 .textexp a:hover{
@@ -176,6 +186,7 @@
 }
 
 .muestra {
+    margin: 0px;
     grid-area: muestra;
     background-color: #e7e4dc;
     display: flex;
@@ -197,6 +208,8 @@
 }
 
 .muestra img {
+    width: 22vw;
+    height: 50vh;
     padding: 50px;
 }
 
@@ -205,7 +218,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -222,7 +235,7 @@
     transition: 0.5s;
     box-shadow: 0px 4px 4px rgba(255, 0, 0, 0.37);
     position: relative;
-    bottom: 20px;
+    margin: 1rem;
 }
 
 .muestra a:hover{
@@ -243,12 +256,14 @@
     align-items: center;
     height: 85vh;
     background-color: #e7e4dc;
+    border: #222 groove 10px;
 }
 
-.info img {
-    padding-left: 110px;
-    padding-right: 125px;
+.info img{
+    width: 25vw;
+    height: 25vw;
 }
+
 
 .sobremi {
     grid-area: sobremi;
@@ -287,8 +302,8 @@
 }
 
 .mapa iframe{
-    width: 600px;
-    height: 450px;
+    width: 30vw;
+    height: 50vh;
 }
 
 .formulario{
@@ -326,6 +341,7 @@
     justify-content: center;
     align-items: center;
     height: 85vh;
+    border: #222 groove 10px;
 }
 
 .trabajos h2 {
@@ -357,8 +373,13 @@
 /* Main Merchandising ****************/
 
 .merch{
+    display: flex;
     grid-area: merch;
     background-color: #e7e4dc;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: stretch;
+    border: #222 groove 10px;
 }
 
 .merch h2{
@@ -385,23 +406,22 @@
 }
 
 .cuadros img{
-    width: 450px;
-    margin: 70px;
+    width: 25vw;
+    margin: 3rem;
 }
 
 .cuadros h3{
-    margin-top: -30px;
     font-size: x-large;
-
 }
+
 /* Footer **************************/
 
 .footer {
     grid-area: footer;
-    background-color: #222;
+    background-image: url(../Imagenes/BACKGROUNDH.png);
+    background-size: cover;
     position: relative;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: #222;
     height: 5vh;
 }
 
@@ -429,16 +449,30 @@
 /* Diseño Responsive - Mobile Last */
 
 /* Laptop y tablet */
+@media (max-width: 1440px){
+
+    /* Trabajos ********************** */
+
+    .trabajos{
+        height: auto;
+    }
+
+}
+
 @media (max-width: 1024px) {
 
     /* Index */
+
+    .exp{
+        margin: 0px;
+    }
+
     .imgexp img {
-        max-width: 215px;
-        max-height: 240px;
+        width: 35vw;
     }
 
     .textexp {
-        margin-left: 120px;
+        height: 60vh;
     }
 
     .textexp h2 {
@@ -454,8 +488,12 @@
 
     .textexp a {
         margin: 20px;
-        top: -20px;
-        left: 15%;
+        top: -1rem;
+    }
+
+    .tatts img{
+        width: 40vw;
+        height: 55vh;
     }
 
     /* Sobre Mi */
@@ -468,6 +506,11 @@
         justify-content: space-evenly;
     }
 
+    .info img{
+        width: 40vw;
+        height: 40vh;
+    }
+
     .sobremi h2 {
         margin-bottom: 20px;
     }
@@ -477,15 +520,6 @@
         margin: 20px;
     }
 
-    /* Trabajos */
-    .trabajos {
-        height: auto;
-    }
-
-    .trabajos h2 {
-        margin-top: 10px;
-        margin-bottom: 15px;
-    }
     
     /* Merch */
     .retratos{
@@ -496,23 +530,57 @@
     }
 
     .cuadros img{
+        width: 35vw;
         align-items: center;
-        width: 400px;
-        margin: 50px;
+    }
+
+    /* Contacto *****************/
+
+    .mapa iframe{
+        width: 45vw;
     }
 }
 
 /* Ajuste para tablet */
 
 @media (max-width: 768px) {
-    .imgexp {
-        padding: 0px;
+
+    /* INDEX ************* */
+    .exp{
+        margin: 0px;
+    }
+
+    .imgexp img{
+        width: 30vw;
+    }
+
+    .tatts img{
+        width: 60vw;
+    }
+
+    /* Trabajos **************/
+
+    .trabajos img:hover{
+        transform: none;
+        transition: none;
     }
 
     /* Contacto */
+    .contacto{
+        height: auto;
+    }
+
+    .mapa{
+        margin: 1rem;
+    }
+
     .mapa iframe{
        width: 50vw;
        height: 50vh;
+    }
+
+    .formulario{
+        margin: 1rem;
     }
     
     /* Merch */
@@ -527,13 +595,25 @@
 /* Mobile L */
 
 @media (max-width: 425px) {
+
+    /* Header *************/
     .header {
-        height: 15vh;
+        height: 18vh;
         display: flex;
         align-items: stretch;
         align-content: space-around;
         flex-direction: row;
         justify-content: space-evenly;
+    }
+
+    .titulo{
+        margin-left: 1rem;
+        margin-top: 0.5rem;
+    }
+
+    .titulo img{
+        width: 20vw;
+        height: 10vh;
     }
 
     .menu {
@@ -542,12 +622,14 @@
         align-content: center;
         align-items: center;
     }
-
     .menu li {
         padding: 5px;
     }
 
+    /* INDEX ******************** */
+
     .exp {
+        margin: 0px;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -555,29 +637,41 @@
         justify-content: center
     }
 
-    .imgexp {
-        margin-top: 20px;
+    .textexp{
+        margin: 0px;
+    }
+
+    .imgexp img{
+        width: 60vw;
     }
 
     .tatts img {
+        width: 80vw;
         padding: 30px;
     }
 
     .muestra a {
-        bottom: 13px;
+        bottom: 1rem;
+    }
+
+    /* Sobre mi************* */
+    .info img{
+        width: 75vw;
     }
 
     /* Merch */
     .retratos img{
-        margin: 10px;
+        width: 70vw;
         margin-bottom: 60px;
         margin-top: 25px;
     }
 
     /* Contacto */
+
     .contacto{
-        height: 100vh;
+        padding: 0px;
     }
+
     .mapa iframe{
         width: 70vw;
         height: 35vh;
@@ -589,8 +683,33 @@
         flex-wrap: wrap;
         justify-content: center;
     }
+
     .formulario h2{
         margin-top: 10px;
         margin-bottom: 20px;
     }
+
+    .formulario textarea{
+        width: 70vw;
+    }
+
+}
+
+@media (max-width: 375px){
+    /* Header ************/
+    .header{
+        height: 20vh;
+    }
+
+    /* Sobre Mi *******************/
+    .info img{
+        height: 30vh;
+    }
+
+    /* Merch ************* */
+
+    .retratos img{
+        margin: 2rem;
+    }
+
 }
