@@ -497,13 +497,9 @@ ul{
     }
 
     /* Sobre Mi */
-    .info {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
-        align-content: center;
-        justify-content: space-evenly;
+    .info{
+        padding: 0px;
+        margin: 0px;
     }
 
     .info img{
@@ -656,6 +652,7 @@ ul{
     /* Sobre mi************* */
     .info img{
         width: 75vw;
+        height: 75vw;
     }
 
     /* Merch */
