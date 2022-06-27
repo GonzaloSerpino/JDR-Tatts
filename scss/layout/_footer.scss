@@ -1,0 +1,29 @@
+.footer {
+    grid-area: footer;
+    background-image: url(../Imagenes/BACKGROUNDH.png);
+    background-size: cover;
+    position: relative;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: $altoF;
+
+    a {
+        list-style: none;
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    i {
+        font-size: 30px;
+    }
+}
+
+.links {
+    display: flex;
+    height: 100%;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}

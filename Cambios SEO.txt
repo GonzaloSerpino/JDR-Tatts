@@ -1,0 +1,5 @@
+-Agruegue keywords a cada html
+-Agregue description a cada html
+-Cambie los titulos
+-Cree una carpeta pages
+-Agregue un sitemap

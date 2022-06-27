@@ -1,0 +1,52 @@
+.contenedorT {
+    display: grid;
+    grid-template-columns: 3fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "header header header"
+        "trabajos trabajos trabajos"
+        "footer footer footer"
+}
+
+.trabajos {
+    grid-area: trabajos;    
+    background-color: #e7e4dc;
+    @include dPlayRow(center,center,center);
+    height: $altoM;
+    border: $bordes;
+    h2{
+        @extend %EstiloTitulos;
+        margin-bottom: 25px;
+    }  
+}
+
+.tatuajes {
+    @include dPlayRow(center,center,center);
+    img{
+        padding: 15px;
+        height: 35vh;
+    }
+    img:hover{
+        transform: scale(1.4);
+        transition: 0.4s;
+    }
+}
+
+@media (max-width: 1440px){
+    .trabajos{
+        height: auto;
+    }
+}
+
+@media (max-width: 1024px){
+    .tatuajes{
+        img{
+            height: 50vh;
+        }
+        img:hover{
+            transform: none;
+            transition: none;
+        }
+    }
+}
+

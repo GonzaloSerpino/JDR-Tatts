@@ -1,0 +1,83 @@
+.contenedorM {
+    display: grid;
+    grid-template-columns: 3fr;
+    grid-template-areas:
+        "header header header"
+        "merch merch merch"
+        "footer footer footer";
+}
+
+.merch {
+    grid-area: merch;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: stretch;
+    border: $bordes;
+    background-color: #e7e4dc;
+    h2 {
+        @extend %EstiloTitulos;
+        margin-top: 40px;
+    }
+}
+
+.retratos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    margin-bottom: 40px;
+}
+
+.cuadros {
+    @include dPlayColumn (space-between, flex-start, center);
+
+    img {
+        width: 25vw;
+        margin: 3rem;
+    }
+    h3{
+        font-size: x-large;
+    }
+}
+
+@media (max-width: 1024px){
+    .retratos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .cuadros{
+        img{
+            width: 35vw;
+            align-items: center;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .retratos{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+@media (max-width: 425px) {
+    .retratos{
+        img{
+            width: 70vw;
+            margin-bottom: 60px;
+            margin-top: 25px;
+        }
+    }
+}
+
+@media (max-width: 375px){
+    .retratos{
+        img{
+            margin: 2rem;
+        }
+    }
+}

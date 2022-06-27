@@ -1,0 +1,86 @@
+.contacto {
+    background-image: url(../Imagenes/IMG_1295.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: $altoM;
+    @include dPlayRow(center, space-evenly, center);
+}
+
+.mapa {
+    iframe {
+        width: 30vw;
+        height: 50vh;
+    }
+}
+
+.formulario {
+    grid-area: formulario;
+    @include dPlayColumn (center, center, center);
+    text-align: center;
+
+    h2 {
+        @extend %EstiloTitulos;
+        color: white;
+        margin-bottom: 50px;
+    }
+
+    input {
+        margin: 10px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .mapa {
+        iframe {
+            width: 45vw;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .contacto {
+        height: auto;
+    }
+
+    .mapa {
+        margin: 1rem;
+
+        iframe {
+            width: 50vw;
+            height: 50vh;
+        }
+    }
+
+    .formulario {
+        margin: 1rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .contacto {
+        padding: 0px;
+    }
+
+    .mapa iframe {
+        width: 70vw;
+        height: 35vh;
+    }
+
+    .formulario {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        h2 {
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        textarea {
+            width: 70vw;
+        }
+    }
+}

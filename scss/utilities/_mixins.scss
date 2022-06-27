@@ -1,0 +1,17 @@
+@mixin dPlayRow($ac, $jc, $ai){
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: $ac;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+@mixin dPlayColumn ($ac, $jc, $ai) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: $ac;
+    align-items: $ai;
+    justify-content: $jc;
+}
