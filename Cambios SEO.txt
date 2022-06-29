@@ -3,3 +3,4 @@
 -Cambie los titulos
 -Cree una carpeta pages
 -Agregue un sitemap
+-Cambie las imagenes por URLs para que el proyecto no sea tan pesado
