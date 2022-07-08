@@ -29,6 +29,7 @@
         margin-bottom: 50px;
     }
     p{
+        max-width: 40vw;
         text-align: left;
     }
 }
@@ -47,6 +48,7 @@
             margin-bottom: 20px;
         }
         p{
+            max-width: none;
             text-align: center;
         }
     }
